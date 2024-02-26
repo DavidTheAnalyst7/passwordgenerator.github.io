@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link ref="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+    <style>
+      body {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        height: 100vh;
+        overflow-x: hidden;
+        user-select: none;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .top {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: black;
+        margin-top: -400px;
+        margin-right: -440px;
+      }
+      .name_x {
+        margin-left: 0px;
+      }
+      button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4caf50; /* Green */
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #45a049; /* Darker green */
+      }
+      /* Input box style */
+      input {
+      padding: 0px;
+      
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 7px;
+      font-size: 16px;
+      outline: none; /* Remove default focus outline */
+      }
+
+/* Input box focus effect */
+      input:focus {
+      border-color: #007bff; /* Change border color on focus */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow on focus */
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="top">Password Generator</h1>
+    <form action="/generate" method="post">
+      <label for="passwordLength"
+        >What will be the length of your Password? (in digits)</label
+      >
+      <input id="passwordLength" name="passwordLength" type="number" required />
+      <p>Would you like to have numbers included in your Password?</p>
+      <label><input type="checkbox" name="numbers" checked /> Yes</label>
+      <label><input type="checkbox" name="excludeNumbers" /> No</label>
+      <p>
+        Would you like to have special characters included in your Password?
+      </p>
+      <label
+        ><input type="checkbox" name="special_character" checked /> Yes</label
+      >
+      <label
+        ><input type="checkbox" name="excludeSpecialCharacters" /> No</label
+      >
+      <br />
+      <br />
+      <button type="submit">Generate Password</button>
+    </form>
+    <p id="generatedPassword" style="margin-bottom: -400px">
+      Built by David Nwuju
+    </p>
+    <p style="margin-bottom: -450px; margin-left: -150px;">Phone: +2347032304271</p>
+    
+    <p style="margin-bottom: -500px; margin-left: -175px;" ><a href="https://www.linkedin.com/in/david-nwuju-bb5a312b5/">LinkedIN</a></p>
+    <p style="margin-bottom: -500px; margin-left: 15px;"><a href="https://github.com/DavidTheAnalyst7">Github</a></p>
+  
+  </body>
+</html>
